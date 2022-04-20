@@ -18,11 +18,11 @@ function Product() {
     setLoading(true);
     return axios({
       url: 'http://localhost:8000/data',
-      method: 'GET',
-      params: {
+      //method: 'GET',
+    //   params: {
        
       
-      },
+    //   },
     })
       .then((response) => {
         setLoading(false);
