@@ -6,15 +6,16 @@ import './App.css';
 //import Product from './components/Product';
 import Navbar from './components/Navbar';
 
+import Card1 from './components/Card1'
+
 function App() {
-
- 
-
 
   return (
     <div className="App">
     
     <Navbar/>
+
+    <Card1/>
 
     
 
