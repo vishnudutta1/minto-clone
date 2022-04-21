@@ -13,45 +13,43 @@ function Product() {
 
 
 
-
   const fetchData = async () => {
-    setLoading(true);
     return axios({
-      url: 'http://localhost:8000/data',
-      //method: 'GET',
-    //   params: {
-       
-      
-    //   },
+      url: `http://localhost:8000/data`,
+      method: 'GET',
+      params: {},
     })
       .then((response) => {
-        setLoading(false);
         // const data =(response.data)
-        //const newdata = response.data
+
         console.log(response.data)
-       setData(response.data);
-        
+        setData(response.data)
+       // dispatch(storeData(response.data));
       })
 
-      .catch((error) => {
-        setLoading(true);
-        setError(true);
-      });
+      .catch((error) => {});
   };
 
   useEffect(() => {
     fetchData();
-  
   }, []);
+
+
+
+
+ 
 
 
   return (
     <div className="App">
 {data.map((e) => {
   return (
-    <div>
-      <h1>{e.id}</h1>
-    <img src={e.image} alt="" className='imgcls' />
+
+    <div key = {e.id}>
+      
+      {/* <h1>{e._id}</h1> */}
+    <img src={e.author_image[0]} alt=""  />
+    <h1>{e.author_name}</h1>
     </div>
   )
 })}
