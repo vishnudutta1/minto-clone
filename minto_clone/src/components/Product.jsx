@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 
 import axios from "axios"
 
+import './Product.css';
+
 import '../App.css';
 
 function Product() {
@@ -42,18 +44,28 @@ function Product() {
 
   return (
     <div className="App">
+
+<div className="dataDisplay" >
+
 {data.map((e) => {
   return (
 
-    <div key = {e.id}>
-      
-      {/* <h1>{e._id}</h1> */}
-    <img src={e.author_image[0]} alt=""  />
+    
+
+      <div  key = {e.id} className='content'>
+      <div className='innerContent'>
+      <img src={e.author_image[0]} alt=""  />
     <h1>{e.author_name}</h1>
-    </div>
+      </div>
+      </div>
+      
+    
+    
+    
   )
+ 
 })}
-     
+      </div>
     </div>
   );
 }
