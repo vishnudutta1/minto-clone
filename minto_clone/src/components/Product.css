@@ -1,6 +1,6 @@
 .dataDisplay{
     width:100%;
-    background-color: red;
+    
     display: grid;
     grid-template-columns: auto auto auto;
 
@@ -8,7 +8,7 @@
 
 .content{
     width:80%;
-    background-color: blue;
+     
     margin:auto;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -17,4 +17,32 @@
 .content img{
     
  width: 250px;
+}
+
+.author_name{
+    color: white;
+    font-size: large
+}
+img{
+   min-width:300px;
+   min-height:200px;
+   max-height: 200px;
+   max-width:300px;
+
+}
+.innerContent{
+    border:1px solid red;
+    height:400px;
+    width:300px;
+}
+.topic_name{
+    color: white;
+    font-size: larger;
+}.Nav{
+    border: 1px solid blue;
+    
+}
+
+Nav>img{
+    width: 10%;
 }

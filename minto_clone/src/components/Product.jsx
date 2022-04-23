@@ -12,6 +12,8 @@ function Product() {
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const [search,setSearch] = useState("")
+
 
 
 
@@ -45,9 +47,34 @@ function Product() {
   return (
     <div className="App">
 
-<div className="dataDisplay" >
 
-{data.map((e) => {
+
+
+<div className='Nav'>
+          
+          <img src="https://www.mento.co.in/assets/logo-e65920660caecc5be1d6b1757278bcb5745b83cfbf08d0dcdc5cd30bead06334.svg" alt="" className='NavLogo' />
+          <input type="text" placeholder='Topic name, Influencer name' onChange={(e) => setSearch(e.target.value)}
+ / >
+          <span>All Topics</span>
+          <span>About</span>
+         <button>Login</button>
+
+      </div>
+
+      <div className="dataDisplay" >
+
+
+{data
+.filter((a) => {
+  if(search === ""){
+    return a
+  }else{
+    return a.author_name.toLowerCase().includes(search.toLowerCase())  || a.topic_name.toLowerCase().includes(search.toLowerCase())  
+  }
+  
+})
+
+.map((e) => {
   return (
 
     
@@ -55,7 +82,10 @@ function Product() {
       <div  key = {e.id} className='content'>
       <div className='innerContent'>
       <img src={e.author_image[0]} alt=""  />
-    <h1>{e.author_name}</h1>
+      <div>
+      <h1 className='topic_name'>{e.topic_name}</h1>
+    <h1 className='author_name'>{e.author_name}</h1>
+      </div>
       </div>
       </div>
       
