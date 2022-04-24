@@ -19,7 +19,7 @@ function Product() {
 
   const fetchData = async () => {
     return axios({
-      url: `http://localhost:8000/data`,
+      url: `https://mintoab-project.herokuapp.com/data`,
       method: 'GET',
       params: {},
     })
