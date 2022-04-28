@@ -4,5 +4,35 @@
 
 .NavLogo{
   height: 30px;  
+  background-color: brown;
+  border: 5px solid blueviolet;
+}
+.about{
+  color: azure;
+  
+ 
+  border: 3px solid red;
+
 }
 
+.login{
+  color: white;
+  margin:auto ;
+  margin-left: 35%;
+  
+ 
+  border: 3px solid blue;
+}
+
+.AlTopic{
+  color: white;
+
+  border: 3px solid violet;
+}
+
+.input{
+  margin-left: auto;
+  border: 3px solid yellow;
+  background-color:black;
+  color: dimgray;
+}
