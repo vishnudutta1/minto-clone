@@ -1,9 +1,11 @@
 .Nav{
     display: flex;
+    max-height: 200px;
+    background-color: black;
 }
 
 .NavLogo{
-  height: 30px;  
+  height: 20px;  
   background-color: brown;
   border: 5px solid blueviolet;
 }
@@ -35,4 +37,11 @@
   border: 3px solid yellow;
   background-color:black;
   color: dimgray;
+}
+.Toolbar{
+  background-color: black;
+}
+
+img{
+  height:200px
 }

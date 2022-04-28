@@ -1,0 +1,36 @@
+.OuterDiv{
+    display: grid;
+    max-height: 500px;
+    grid-template-columns: 40% 50%;
+    min-height: 350px;
+}
+
+.contentDiv{
+    color: white;
+    border: 5px solid goldenrod;
+    width: 100%;
+    border: none;
+    margin-left: 5%;
+}
+
+.img1{
+    border: 2px solid blue;
+    width: 100%;
+    background-image: url(https://d1tthr7pv14hhy.cloudfront.net/Images/Courses/Film-Making/landscape+nitish.jpg);
+    transition: transform 0.8s;
+    transition-property: transform;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /* background-position: cover; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5%;
+}
+
+
+ img{
+    width: 300px;
+    height: 300px;
+}
+

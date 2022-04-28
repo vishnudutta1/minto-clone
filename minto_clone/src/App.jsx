@@ -6,7 +6,10 @@ import './App.css';
 import Product from './components/Product';
 import Navbar from './components/Navbar';
 
-import Card1 from './components/Card1'
+import JustBelowNav from './components/JustBelowNav';
+
+//import Card1 from './components/Card1'
+//import JustBelowNav from './components/JustBelowNav';
 
 function App() {
 
@@ -15,6 +18,8 @@ function App() {
     
   
     <Navbar/>
+     <JustBelowNav/>
+    <Product/> 
   
     
 
