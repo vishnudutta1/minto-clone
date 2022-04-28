@@ -18,6 +18,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import Button from '@mui/material/Button';
+import {useState} from 'react';
 
 
 
@@ -68,6 +69,10 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 function Navbar() {
+
+  const [state,setState] = useState("")
+
+  console.log(state)
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -197,8 +202,10 @@ function Navbar() {
                 <SearchIcon />
               </SearchIconWrapper>
               <StyledInputBase
-                placeholder="Search…"
+                placeholder="Toic name,influencer name"
                 inputProps={{ 'aria-label': 'search' }}
+                onChange= {(e)=>setState(e.target.value)}
+                
               />
             </Search>
             <Box sx={{ flexGrow: 1 }} style={{backgroundColor:"black"}}/>
