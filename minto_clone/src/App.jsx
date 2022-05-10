@@ -20,6 +20,7 @@ function App() {
     <Navbar/>
      <JustBelowNav/>
     <Product/> 
+    <paragraph_temp/>
   
     
 

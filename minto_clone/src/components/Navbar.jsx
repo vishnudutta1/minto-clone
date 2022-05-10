@@ -238,7 +238,7 @@ function Navbar() {
                 <AccountCircle />
               </IconButton> */}
 
-<Button href="#text-buttons" style={{color:"white",backgroundColor:"black"}}>Login</Button>
+<Button href="#text-buttons" style={{color:"white",backgroundColor:"black"}}><p style={{font:'15px'}}>Login</p></Button>
 
             </Box>
             <Box sx={{ display: { xs: 'flex', md: 'none' } }} style={{backgroundColor:"black"}}>
