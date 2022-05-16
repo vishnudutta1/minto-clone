@@ -6,6 +6,9 @@ import './Product.css';
 
 import '../App.css';
 
+import { NavLink } from 'react-router-dom';
+
+
 function Product() {
 
   const [data, setData] = useState([]);
@@ -50,14 +53,6 @@ function Product() {
 
 
 
-<div className='Nav'>
-          
-          <img src="https://www.mento.co.in/assets/logo-e65920660caecc5be1d6b1757278bcb5745b83cfbf08d0dcdc5cd30bead06334.svg" alt="" className='NavLogo' />
-          <input type="text" placeholder='Topic name, Influencer name' onChange={(e) => setSearch(e.target.value)}
- / >
-         
-
-      </div>
 
       <div className="dataDisplay" >
 
@@ -77,7 +72,11 @@ function Product() {
 
     
 
-      <div  key = {e.id} className='content'>
+      
+
+<NavLink to={`/products/${e.id}`} className="navMapping"  >
+
+<div  key = {e.id} className='content'>
       <div className='innerContent'>
       <img src={e.author_image[0]} alt=""  />
       <div>
@@ -86,6 +85,9 @@ function Product() {
       </div>
       </div>
       </div>
+
+  </NavLink>
+
       
     
     

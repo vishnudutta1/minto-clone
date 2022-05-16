@@ -97,6 +97,13 @@ function Navbar() {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
+
+
+
+
+
+  
+
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
@@ -202,7 +209,7 @@ function Navbar() {
                 <SearchIcon />
               </SearchIconWrapper>
               <StyledInputBase
-                placeholder="Toic name,influencer name"
+                placeholder="Top ic name,influencer name"
                 inputProps={{ 'aria-label': 'search' }}
                 onChange= {(e)=>setState(e.target.value)}
                 

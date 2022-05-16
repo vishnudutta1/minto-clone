@@ -8,6 +8,10 @@ import Navbar from './components/Navbar';
 
 import JustBelowNav from './components/JustBelowNav';
 
+import { Route, Routes } from "react-router-dom";
+import Individual_page from './components/Individual_page';
+
+
 //import Card1 from './components/Card1'
 //import JustBelowNav from './components/JustBelowNav';
 
@@ -17,11 +21,21 @@ function App() {
     <div className="App">
     
   
-    <Navbar/>
+     <Navbar/>
      <JustBelowNav/>
     <Product/> 
-    <paragraph_temp/>
+    <paragraph_temp/> 
+
   
+    <Routes>
+        
+
+        <Route path={"/products"} element={<Product />} />
+
+        <Route path={"/products/:id"} element={<Individual_page />} />
+      
+      </Routes>
+
     
 
     

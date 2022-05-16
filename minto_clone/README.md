@@ -68,3 +68,37 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+mento img link - https://www.mento.co.in/assets/logo-e65920660caecc5be1d6b1757278bcb5745b83cfbf08d0dcdc5cd30bead06334.svg
+
+
+
+
+
+
+
+code for filtering product
+
+<!-- 
+  const fetchData = async () => {
+    return axios({
+      url: `https://mintoab-project.herokuapp.com/data`,
+      method: 'GET',
+      params: {},
+    })
+      .then((response) => {
+        // const data =(response.data)
+
+        console.log(response.data)
+        setData(response.data)
+       // dispatch(storeData(response.data));
+      })
+
+      .catch((error) => {});
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []); -->
